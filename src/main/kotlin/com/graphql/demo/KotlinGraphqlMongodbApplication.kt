@@ -1,4 +1,4 @@
-package com.graphql.demo.kotlingraphqlmongodb
+package com.graphql.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
