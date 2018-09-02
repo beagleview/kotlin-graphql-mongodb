@@ -7,5 +7,6 @@ import org.springframework.stereotype.Component
 class UserDao(
         private val userRepository: UserRepository
 ){
-    
+    fun getAllUser() = userRepository.findAll()
+    fun getUserByID(id : String) = userRepository.findById(id)
 }
