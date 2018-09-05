@@ -4,4 +4,13 @@ schema {
 
 type Query {
     version : String
+
+    getAllUser(id : ID): User
+    
+    getUserByID : [User]
+}
+
+type User{
+    id: ID!
+    name: String!
 }
