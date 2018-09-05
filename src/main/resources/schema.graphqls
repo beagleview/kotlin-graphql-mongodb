@@ -3,11 +3,11 @@ schema {
 }
 
 type Query {
-    version : String
+    version: String
 
-    getAllUser(id : ID): User
-    
-    getUserByID : [User]
+    getUserByID(id: ID): User
+
+    getAllUser: [User]
 }
 
 type User{
