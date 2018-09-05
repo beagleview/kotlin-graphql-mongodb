@@ -8,5 +8,7 @@ import org.springframework.stereotype.Component
 class GraphqlQuery(
         private val userDao: UserDao
 ) : GraphQLQueryResolver{
-    fun version() = "1.0.0"
+    fun version() = "1.0.1"
+    fun getAllUser() = userDao.getAllUser()
+    fun getUserByID(id : String) = userDao.getUserByID(id)
 }
